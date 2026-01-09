@@ -1,7 +1,6 @@
 import grpc
 
 from concurrent import futures
-
 from websockets import serve
 
 import course_service_pb2
