@@ -1,5 +1,5 @@
 from typing import TypedDict
-import httpx
+from httpx import Response
 from clients.api_client import APIClient
 
 
@@ -19,7 +19,7 @@ class PublicUsersClient(APIClient):
     Клиент для работы с /api/v1/users
     """
 
-    def create_user_api(self, request: CreateRequestDict) -> httpx.Response:
+    def create_user_api(self, request: CreateRequestDict) -> Response:
         """
         Метод выполняет создание пользователя.
 
