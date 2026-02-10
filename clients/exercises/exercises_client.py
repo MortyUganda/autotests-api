@@ -9,7 +9,11 @@ class GetExercisesQueryDict(TypedDict):
     """
     userId: str
 
+
 class CreateExercisesRequestDict(TypedDict):
+    """
+    Описание структуры запроса на создание задания.
+    """
     title: str | None
     courseId: str | None
     maxScore: int | None
@@ -20,6 +24,9 @@ class CreateExercisesRequestDict(TypedDict):
 
 
 class UpdateExercisesRequestDict(TypedDict):
+    """
+    Описание структуры запроса на обновление задания.
+    """
     title: str | None
     maxScore: int | None
     minScore: int | None
@@ -32,7 +39,7 @@ class ExercisesClient(APIClient):
     """
     Клиент для работы с /api/v1/exercises
     """
-    
+
     def get_exercises_api(self, query: GetExercisesQueryDict) -> Response:
         """
         Метод получения списка заданий.
