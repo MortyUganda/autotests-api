@@ -14,13 +14,13 @@ class CreateCourseRequestDict(TypedDict):
     """
     Описание структуры запроса на создание курса.
     """
-    title: str
-    maxScore: int
-    minScore: int
-    description: str
-    estimatedTime: str
-    previewFileId: str
-    createdByUserId: str
+    title: str | None
+    maxScore: int | None
+    minScore: int | None
+    description: str | None
+    estimatedTime: str | None
+    previewFileId: str | None
+    createdByUserId: str | None
 
 
 class UpdateCourseRequestDict(TypedDict):
