@@ -14,13 +14,13 @@ class CreateExercisesRequestDict(TypedDict):
     """
     Описание структуры запроса на создание задания.
     """
-    title: str | None
-    courseId: str | None
-    maxScore: int | None
-    minScore: int | None
-    orderIndex: int | None
-    description: str | None
-    estimatedTime: str | None
+    title: str
+    courseId: str
+    maxScore: int
+    minScore: int
+    orderIndex: int
+    description: str
+    estimatedTime: str
 
 
 class UpdateExercisesRequestDict(TypedDict):
